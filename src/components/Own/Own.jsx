@@ -128,7 +128,7 @@ const Own = () => {
               </select> */}
               {/* onChange={() => setPlatformShow(!platformShow)} */}
               <div className="dropdown">
-                <p>Platform:</p>
+                <p>Platforms:</p>
 
                 <button onClick={() => setShowPlatform(!showPlatform)} className={s.select__query}>
                   {platform == '' ? 'Change Platform' : platform}
@@ -146,7 +146,7 @@ const Own = () => {
                 </div>
               </div>
               <div className="dropdown">
-                <p>Giveaway Type:</p>
+                <p>Giveaway Types:</p>
 
                 <button onClick={() => setShowGiveaway(!showGiveaway)} className={s.select__query}>
                   {giveaway == '' ? 'Change Type' : giveaway}
