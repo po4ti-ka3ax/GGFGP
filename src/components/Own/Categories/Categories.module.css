@@ -1,0 +1,55 @@
+.links {
+    background-color: #505050;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    justify-content: space-between;
+}
+.platform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link a{
+    color: #fff;
+    margin: 0 25px;
+    font-size: 18px;
+    transition: all .3s ;
+}
+.link:hover {
+    text-shadow: 0 0 20px #8D4646;
+}
+
+@media screen and (max-width: 1165px) {
+    .link a {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 830px) {
+    .link a {
+        font-size: 11px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .links {
+        padding: 10px;
+    }
+    .link a{
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .links {
+        padding: 10px;
+    }
+    .link a{
+        margin: 0 8px;
+        font-size: 9px;
+    }
+
+}

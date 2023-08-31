@@ -1,0 +1,30 @@
+.header {
+    background-color: #393939;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.header img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+.header__title {
+    font-family: 'Raleway';
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width: 655px) {
+    .header img {
+        width: 65px;
+        height: 65px;
+        object-fit: cover;
+
+    }
+    .header__title {
+        font-size: 30px;
+    }   
+}

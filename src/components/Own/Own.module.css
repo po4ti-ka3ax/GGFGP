@@ -1,0 +1,275 @@
+.container {
+    background-color: #393939;
+}
+
+.cards {
+    padding: 0 50px;
+
+}
+
+.selects {
+    padding: 25px 50px;
+    
+}
+
+.select {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search__btn {
+    padding: 10px;
+    font-size: 25px;
+    margin-top: 15px;
+    display: block;
+    border-radius: 8px;
+    color: #fff;
+    background: none;
+    border: 2px solid #CC7300;
+    transition:  .3s all;
+    display: flex;
+    align-items: center;
+    transition:  .3s all;
+
+}
+
+.search__btn img {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+
+}
+
+
+.search__btn:hover {
+    background-color: #CC7300;
+}
+
+/* .card__btn {
+    margin-top: 15px;
+    display: block;
+    border-radius: 8px;
+    color: #fff;
+    border: 2px solid #CC7300;
+    transition:  .3s all;
+} */
+
+.card__btn:hover {
+    transition:  .3s all;
+    background-color: #CC7300;
+}
+
+/* 
+.select::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+
+    display: block;
+    cursor: pointer; */
+
+    /* создаем треугольник */
+    /* width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11.3px 6.5px 0 6.5px;
+    border-color: #8d4646 transparent transparent transparent;
+    line-height: 0px;
+    _border-color: #8d4646 #000000 #000000 #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000'); */
+
+    /*Сняли клик с треуглоьничка*/
+
+    /* pointer-events: none;
+
+} */
+
+.select p {
+    font-size: 20px;
+    color: #9C9C9C;
+    display: inline-block;
+}
+
+.select__query {
+    background: none;
+    position: relative;
+    color: #fff;
+    padding: 0 25px 0 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 20px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+
+
+}
+
+.select__query::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+
+    display: block;
+    cursor: pointer;
+
+    /* создаем треугольник */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11.3px 6.5px 0 6.5px;
+    border-color: #8d4646 transparent transparent transparent;
+    line-height: 0px;
+    _border-color: #8d4646 #000000 #000000 #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+
+    /*Сняли клик с треуглоьничка*/
+
+    pointer-events: none;
+}
+
+.select__query::-ms-expand {
+    display: none;
+}
+
+.dropdown__list {
+    
+    display: none;
+}
+.dropdown__list_visible {
+    display: block;
+    width: 220px;
+    background-color: #434343;
+    border-radius: 13px;
+    padding: 5px 8px;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    margin: 0 0 0 50px;
+    overflow: hidden;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.dropdown__list_item{
+    margin: 5px 0;
+    padding: 3px 0;
+    border-bottom: 2px solid #505050;
+    transition: all .3s;
+}
+.dropdown__list_item:hover {
+    text-shadow: 0 0 20px #8D4646;
+    background-color: #3E3E3E;
+}
+
+.dropdown__list_item:last-child {
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown__input_hidden {
+    /* display: none; */
+}
+
+.default__title {
+    margin-top: 5px; 
+    text-align: center;
+}
+.default__title p{
+    font-size: 15px;
+    color: gray;
+}
+
+/* .select__option {
+    padding: 0;
+} */
+@media screen and (max-width: 1165px) {
+    .select p {
+        font-size: 14px;
+    }
+    .select__query {
+        font-size: 15px;
+    }
+    .dropdown__list_visible {
+        font-size: 14px;
+        margin: 0 0 0 30px;
+
+    }
+    .search__btn {
+        font-size: 16px;
+    }
+    .search__btn img{
+        width: 18px;
+        height: 18px;
+    }
+}
+@media screen and (max-width: 790px) {
+    .select p {
+        font-size: 13px;
+    }
+    .select__query {
+        font-size: 14px;
+    }
+    .dropdown__list_visible {
+        font-size: 12px;
+        margin: 0 0 0 30px;
+        /* padding: 5px 0; */
+
+    }
+    .search__btn {
+        font-size: 16px;
+    }
+    .search__btn img{
+        width: 18px;
+        height: 18px;
+    }
+}
+@media screen and (max-width: 655px) {
+
+    .select__query {
+        font-size: 12px;
+    }
+    .search__btn {
+        font-size: 14px;
+    }
+    .search__btn img{
+        width: 14px;
+        height: 14px;
+    }
+}
+@media screen and (max-width: 510px) {
+    .select p  {
+        font-size: 9px;
+    }
+    .select__query {
+        font-size: 12px;
+    }
+    .dropdown__list_visible {
+        font-size: 10px;
+        margin: 0 0 0 10px;
+        /* padding: 5px 0; */
+    }
+    .search__btn {
+        font-size: 11px;
+    }
+    .search__btn img{
+        width: 11px;
+        height: 11px;
+    }
+    .selects {
+        padding: 15px 25px;
+        
+    }
+}
